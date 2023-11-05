@@ -1,6 +1,6 @@
 // FOR Device
 ###
-GET http://localhost:5000
+GET http://aws.connect.psdb.cloud:5000
 ###
 GET http://localhost:5000/device
 ###
@@ -23,7 +23,7 @@ Content-Type: application/json
     "value_string" : "",
     "value_boolean": false,
     "value_number": 0,
-    "authorEmail" : "yoga.pratama@gmail.com"
+    "authorEmail" : "rohiman2012@gmail.com"
 }
 
 ###
@@ -38,14 +38,14 @@ Content-Type: application/json
 
 
 //FOR USER
-GET http://localhost:5000/user
+GET http://aws.connect.psdb.cloud:5000/user
 ###
 POST http://localhost:5000/user
 Content-Type: application/json
 
 {
-    "name" : "Yoga Pratama",
-    "email" : "yoga.pratama@gmail.com"
+    "name" : "Iman Rohiman",
+    "email" : "rohiman2012@gmail.com"
 }
 ###
 GET http://localhost:5000/user/fa0ccbc5-4964-4754-857c-bf62a5ff5207
