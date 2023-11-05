@@ -1,0 +1,59 @@
+// FOR Device
+###
+GET http://localhost:5000
+###
+GET http://localhost:5000/device
+###
+GET http://localhost:5000/device/40d14731-0e56-4958-9368-b6dd9db05845
+
+###
+POST http://localhost:5000/device
+Content-Type: application/json
+
+# {
+#     "title" : "Lampu Kamar Mandi",
+#     "description" : "Kamar ayah ibu",
+#     "value" : "OFF",
+#     "authorEmail" : "yoga.pratama@gmail.com"
+# }
+{
+    "name" : "Lampu Kamar Mandi",
+    "description" : "Kamar ayah ibu",
+    "category": "aktuator",
+    "value_string" : "",
+    "value_boolean": false,
+    "value_number": 0,
+    "authorEmail" : "yoga.pratama@gmail.com"
+}
+
+###
+PUT http://localhost:5000/device/40d14731-0e56-4958-9368-b6dd9db05845
+Content-Type: application/json
+
+{
+    "value_boolean": true,
+    "value_string": "sensor menyala"
+}
+###
+
+
+//FOR USER
+GET http://localhost:5000/user
+###
+POST http://localhost:5000/user
+Content-Type: application/json
+
+{
+    "name" : "Yoga Pratama",
+    "email" : "yoga.pratama@gmail.com"
+}
+###
+GET http://localhost:5000/user/fa0ccbc5-4964-4754-857c-bf62a5ff5207
+###
+PUT http://localhost:5000/user/fa0ccbc5-4964-4754-857c-bf62a5ff5207
+Content-Type: application/json
+
+{
+    "name" : "Yoga Pratama Pangestu",
+    "email" : "yoga.pratama@gmail.com"
+}
